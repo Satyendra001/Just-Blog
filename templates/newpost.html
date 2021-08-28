@@ -1,0 +1,51 @@
+<!-- Material form contact -->
+<div class="card">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>NEW POST</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="#" method="POST">
+            {%csrf_token%}
+
+            <!-- Name -->
+            <div class="md-form mt-3">
+                <input type="text" id="materialContactFormName" class="form-control" name="name">
+                <label for="materialContactFormName">Name</label>
+            </div>
+
+            <!-- E-mail -->
+            <div class="md-form">
+                <input type="email" id="materialContactFormEmail" class="form-control" name="email">
+                <label for="materialContactFormEmail">E-mail</label>
+            </div>
+
+            <div class="md-form">
+                <input type="text" id="materialTitle" class="form-control" name="title">
+                <label for="materialTitle">Title</label>
+            </div>
+
+           
+
+            <!--Message-->
+            <div class="md-form">
+                <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3" name="body"></textarea>
+                <label for="materialContactFormMessage">Body</label>
+            </div>
+
+            
+
+            <!-- Send button -->
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Post</button>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form contact -->
